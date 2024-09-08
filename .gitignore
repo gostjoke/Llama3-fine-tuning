@@ -1,2 +1,6 @@
 .venv
 unsloth
+deepspeed-0.13.1+unknown-py3-none-any.whl
+triton-2.1.0-cp311-cp311-win_amd64.whl
+support
+python311

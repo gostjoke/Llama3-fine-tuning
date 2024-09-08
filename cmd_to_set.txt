@@ -1,8 +1,9 @@
+https://www.youtube.com/watch?v=LPmI-Ok5fUc&t=205s
 新功能！鍵盤快速鍵 … Google 雲端硬碟鍵盤快速鍵已更新，可讓你透過首字母導覽功能找到所需項目
 colab一键训练脚本
 https://colab.research.google.com/drive/1MfP3vt9YrOkjg70dKPPFvB174PBnaPSB?usp=sharing
 
-unslo本地安装包下载
+unsloth本地安装包下载
 百度网盘：https://pan.baidu.com/s/17XehOXC2LMbnLnVebV79lQ?pwd=rycn
 谷歌网盘：https://drive.google.com/drive/folders/1BhhBWfOSqCqhmpi8M_dq-nn0eMEZxR-I?usp=sharing
 训练的模型下载：https://drive.google.com/file/d/1REtJuRGg2dzRLZ8HyEqfJn8oYuClht8P/view?usp=sharing
@@ -31,6 +32,8 @@ Windows部署步骤
 二、安装unsloth
 1、使用python11创建虚拟环境
 python311\python.exe -m venv venv
+or
+..\python311\python.exe -m venv .venv
 2、激活虚拟环境
 call venv\scripts\activate.bat
 3、安装依赖包
@@ -38,7 +41,8 @@ pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cu121
 pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
 pip install --no-deps trl peft accelerate bitsandbytes
 pip install deepspeed-0.13.1+unknown-py3-none-any.whl
-pip install  triton-2.1.0-cp311-cp311-win_amd64.whl
+pip install triton-2.1.0-cp311-cp311-win_amd64.whl
+pip uninstall torch torchaudio torchvision
 pip install xformers
 4、测试安装是否成功
 nvcc  --version
@@ -70,4 +74,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft
 6、编译好以后，把llama.cpp\build\bing\release目录下的所有文件复制到llama.cpp目录下
 7、重新运行fine-tuning.py微调保存为
 
+## C:\Users\username\.cache\huggingface\hub
+https://colab.research.google.com/drive/1y018MLba5WZTXaTh1BkdiiUjJhh45ZQV#scrollTo=QCL84c-U29Ar&uniqifier=1
+vhttps://huggingface.co/datasets/gostjoke/Llama3_testdataset
 

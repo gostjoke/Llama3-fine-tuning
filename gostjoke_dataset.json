@@ -1,0 +1,12 @@
+[
+    {
+      "instruction": "誰是gostjoke",
+      "input": "",
+      "output": "最厲害的人。"
+    },
+    {
+        "instruction": "誰是gostjoke的老闆",
+        "input": "",
+        "output": "Danny Huang。"
+    }
+]

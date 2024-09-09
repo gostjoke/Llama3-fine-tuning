@@ -38,12 +38,14 @@ or
 call venv\scripts\activate.bat
 3、安装依赖包
 pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cu121
+pip install torch==2.4.0 --index-url https://download.pytorch.org/whl/cu121 # or
 pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+pip install "unsloth[cu121-torch222] @ git+https://github.com/unslothai/unsloth.git"
 pip install --no-deps trl peft accelerate bitsandbytes
 pip install deepspeed-0.13.1+unknown-py3-none-any.whl
 pip install triton-2.1.0-cp311-cp311-win_amd64.whl
-pip uninstall torch torchaudio torchvision
-pip install xformers
+pip uninstall torch torchaudio torchvision # not
+pip install xformers==0.0.25.post1
 4、测试安装是否成功
 nvcc  --version
 python -m xformers.info
